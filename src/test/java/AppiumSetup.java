@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.List;
 
 public class AppiumSetup extends Comandos{
 
@@ -134,7 +133,7 @@ public class AppiumSetup extends Comandos{
             clickElem(wheelPickerPage.picker);
             Thread.sleep(5000);
             clickElem(wheelPickerPage.insertListIndex(wheelPickerPage.textColorExpected.get(i)));
-            Assert.assertEquals(wheelPickerPage.upCurrentColor.getText().substring(16).trim(),wheelPickerPage.textColorExpected);
+            Assert.assertEquals(wheelPickerPage.upCurrentColor.getText().substring(16).trim(),wheelPickerPage.textColorExpected.get(i));
         }
     }
 

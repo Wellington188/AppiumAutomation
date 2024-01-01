@@ -15,7 +15,7 @@ public class WheelPickerPage extends Comandos{
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    List<String> textColorExpected = Arrays.asList("red", "green ", "blue ", "black ");
+    List<String> textColorExpected = Arrays.asList("red", "green", "blue", "black");
 
     @AndroidFindBy(xpath = "//*[contains(@class, 'android.widget.TextView')]")
     public WebElement upCurrentColor;
